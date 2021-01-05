@@ -11,6 +11,7 @@ html body{
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: "KyoboHand";
 }
 
 a {
@@ -29,9 +30,10 @@ a:visited {
     min-width: 100vw;
     background-color: rgba(250, 128, 114);
     display: block;
+    font-size: 20px;
 }
 
-#main_content {
+#intro_content {
     position: relative;
     top:35vh;
     text-align: center;
@@ -39,7 +41,7 @@ a:visited {
 
 /* intro page image */
 
-.main_image {
+.intro_image {
     position: relative;
     display: inline-block;
     width: 180px;
@@ -63,16 +65,58 @@ a:visited {
     color: #fff;
 }
 
-/* #main_page{
+/* tomato html */
+#main_page{
     background-color: cornsilk;
-} */
+}
+
+#who_we_are{
+    position: relative;
+    text-align: center;
+    top: 13vh;
+    left: 30%;
+    width:700px;
+    font-size: 4rem;
+    display: block;
+    border: dashed  rgb(255, 231, 133) 8px;
+    border-radius: 50px;
+    /* background-color: cornflowerblue; */
+}
 #main_images{
     position: relative;
     background-color: cornsilk;
     display: block;
-    top: 35vh;
+    top: 27vh;
 }
 #main_images img{
     width: 16vw;
     display: inline;
+}
+
+#gallery_button{
+    position: relative;
+    text-align: center;
+    top: 40vh;
+    left: 47vw;
+    margin: 10px;
+    background-color: rgb(255, 231, 133);
+    position:fixed 50vw;
+}
+#gallery_button:hover{
+    background-color: rgb(108, 77, 0);
+    color: #fff;
+}
+.button{
+    border:dashed;
+    font-family: "KyoboHand";
+    font-size: 2rem;
+    border-radius: 20px;
+}
+
+/* 캐릭터 튀어나오게 */
+#main_images img{
+    transition: all 0.3s ease-in-out;
+}
+#main_images img:hover{
+    transform: scale(1.4);
 }
