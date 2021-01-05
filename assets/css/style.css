@@ -73,20 +73,20 @@ a:visited {
 #who_we_are{
     position: relative;
     text-align: center;
-    top: 13vh;
-    left: 30%;
+    top: 1vh;
+    left: 25%;
     width:700px;
     font-size: 4rem;
-    display: block;
+    display: inline-block;
     border: dashed  rgb(255, 231, 133) 8px;
     border-radius: 50px;
     /* background-color: cornflowerblue; */
 }
 #main_images{
     position: relative;
-    background-color: cornsilk;
+    /* background-color: cornsilk; */
     display: block;
-    top: 27vh;
+    top: 10vh;
 }
 #main_images img{
     width: 16vw;
@@ -96,8 +96,8 @@ a:visited {
 #gallery_button{
     position: relative;
     text-align: center;
-    top: 40vh;
-    left: 47vw;
+    top: 20vh; 
+    left: 45vw;
     margin: 10px;
     background-color: rgb(255, 231, 133);
     position:fixed 50vw;
@@ -119,4 +119,34 @@ a:visited {
 }
 #main_images img:hover{
     transform: scale(1.4);
+}
+
+.back_button{
+    display: inline-block;
+    position: relative;
+    left: 2%;
+    bottom: 50px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: lightcyan;
+}
+.back_button:hover{
+    color: lightcyan;
+    background-color: rgb(51, 177, 255);
+}
+
+header{
+    display: block;
+}
+
+/* gallery */
+
+.gallery_form{
+    
+    display: inline;
+    float: left;
+    background-color: lightskyblue;
+    margin: 0.1%;
+    height: 70vh;
+    width: 33%;
 }

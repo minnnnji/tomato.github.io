@@ -13,19 +13,48 @@
 
 <body>
     <div id="main_page" class="page_default">
-        <div id="who_we_are">#who_we_are</div>
+        <header>
+            <a href="/index.html"><button class="back_button button"> < Back</button></a>
+            <p id="who_we_are">#who_we_are</p>
+        </header>
         <div id="main_images">
-            <img id="jungeun" src="/assets/images/정은.png" />
-            <img id="cherim" src="/assets/images/채림.png" />
-            <img id="hojung" src="/assets/images/호정.png" />
-            <img id="esther" src="/assets/images/스더.png" />
-            <img id="minji" src="/assets/images/민지.png" />
-            <img id="dahyun" src="/assets/images/다현.png" />
+            <img onclick="toggleImg_j()" id="jungeun" src="/assets/images/정은.png" />
+            <img onclick="toggleImg_c()" id="charim" src="/assets/images/채림.png" />
+            <img onclick="toggleImg_h()" id="hojung" src="/assets/images/호정.png" />
+            <img onclick="toggleImg_e()" id="esther" src="/assets/images/스더.png" />
+            <img onclick="toggleImg_m()" id="minji" src="/assets/images/민지.png" />
+            <img onclick="toggleImg_d()" id="dahyun" src="/assets/images/다현.png" />
             <br>
         </div>
-        <a href="/pages/gallery.html" target="_self"><button id="gallery_button" class="button"
-                value="Gallery"> > Gallery</button></a>
+        <a href="/pages/gallery.html" target="_self"><button id="gallery_button" class="button" value="Gallery">
+                > Gallery</button></a>
     </div>
+    <script>
+        function toggleImg_j() {
+            let changeImg = document.getElementById('jungeun')
+                changeImg.src = "/assets/images/정은2.png";
+        }
+        function toggleImg_c() {
+            let changeImg = document.getElementById('charim')
+                changeImg.src = "/assets/images/채림2.png";
+        }
+        function toggleImg_h() {
+            let changeImg = document.getElementById('hojung')
+                changeImg.src = "/assets/images/호정2.png";
+        }
+        function toggleImg_e() {
+            let changeImg = document.getElementById('esther')
+                changeImg.src = "/assets/images/스더2.png";  
+        } 
+        function toggleImg_m() {
+            let changeImg = document.getElementById('minji')
+                changeImg.src = "/assets/images/민지2.png";  
+        }
+        function toggleImg_d() {
+            let changeImg = document.getElementById('dahyun')
+                changeImg.src = "/assets/images/다현2.png";  
+        }
+    </script>
 </body>
 
 </html>
