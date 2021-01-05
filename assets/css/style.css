@@ -37,6 +37,7 @@ a:visited {
     position: relative;
     top:35vh;
     text-align: center;
+    background-color: rgba(250, 128, 114);
 }
 
 /* intro page image */
@@ -89,7 +90,7 @@ a:visited {
     top: 10vh;
 }
 #main_images img{
-    width: 16vw;
+    width: 14vw;
     display: inline;
 }
 
@@ -116,6 +117,10 @@ a:visited {
 /* 캐릭터 튀어나오게 */
 #main_images img{
     transition: all 0.3s ease-in-out;
+}
+#main_images li{
+    list-style: none;
+    display: inline;
 }
 #main_images img:hover{
     transform: scale(1.4);
@@ -150,3 +155,5 @@ header{
     height: 70vh;
     width: 33%;
 }
+
+/*  */

@@ -8,52 +8,39 @@
         href="/assets/images/favicon/kisspng-tomato-download-cute-tomatoes-5a8ad5d3c4f369.1179025315190481478067.ico"
         type="image/x-icon" />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <title>Tomato_world</title>
 </head>
 
 <body>
     <div id="main_page" class="page_default">
         <header>
-            <a href="/index.html"><button class="back_button button"> < Back</button></a>
+            <a href="/index.html"><button class="back_button button">
+                    < Back</button></a>
             <p id="who_we_are">#who_we_are</p>
         </header>
         <div id="main_images">
-            <img onclick="toggleImg_j()" id="jungeun" src="/assets/images/정은.png" />
-            <img onclick="toggleImg_c()" id="charim" src="/assets/images/채림.png" />
-            <img onclick="toggleImg_h()" id="hojung" src="/assets/images/호정.png" />
-            <img onclick="toggleImg_e()" id="esther" src="/assets/images/스더.png" />
-            <img onclick="toggleImg_m()" id="minji" src="/assets/images/민지.png" />
-            <img onclick="toggleImg_d()" id="dahyun" src="/assets/images/다현.png" />
-            <br>
+            <ul>
+                <li id="1"><a href="/pages/jeongeun.html"><img src="/assets/images/정은.png" /><span>정은</span></a></li>
+                <li id="4"><a href="#"><img src="/assets/images/스더.png" /><span>스더</span></a></li>
+                <li id="3"><a href="#"><img src="/assets/images/호정.png" /><span>호정</span></a></li>
+                <li id="2"><a href="#"><img src="/assets/images/채림.png" /><span>채림</span></a></li>
+                <li id="5"><a href="#"><img src="/assets/images/민지.png" /><span>민지</span></a></li>
+                <li id="6"><a href="#"><img src="/assets/images/다현.png" /><span>다현</span></a></li>
+            </ul>
         </div>
         <a href="/pages/gallery.html" target="_self"><button id="gallery_button" class="button" value="Gallery">
                 > Gallery</button></a>
     </div>
     <script>
-        function toggleImg_j() {
-            let changeImg = document.getElementById('jungeun')
-                changeImg.src = "/assets/images/정은2.png";
-        }
-        function toggleImg_c() {
-            let changeImg = document.getElementById('charim')
-                changeImg.src = "/assets/images/채림2.png";
-        }
-        function toggleImg_h() {
-            let changeImg = document.getElementById('hojung')
-                changeImg.src = "/assets/images/호정2.png";
-        }
-        function toggleImg_e() {
-            let changeImg = document.getElementById('esther')
-                changeImg.src = "/assets/images/스더2.png";  
-        } 
-        function toggleImg_m() {
-            let changeImg = document.getElementById('minji')
-                changeImg.src = "/assets/images/민지2.png";  
-        }
-        function toggleImg_d() {
-            let changeImg = document.getElementById('dahyun')
-                changeImg.src = "/assets/images/다현2.png";  
-        }
+        $(function () {
+            $("#main_images li img").hover(function () {
+                $(this).attr("src", $(this).attr("src").replace(".png", "2.png"));
+                $(this).
+            }, function () {
+                $(this).attr("src", $(this).attr("src").replace("2.png", ".png"));
+            });
+        });
     </script>
 </body>
 
