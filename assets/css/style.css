@@ -165,14 +165,43 @@ a:visited {
 }
 /* gallery */
 
+#gallery_page{
+    width: 100vw;
+    background-color:rgb(255, 231, 133);
+}
+#gellery_header{
+    height: 20vh;
+    background-color: rgb(255, 231, 133);
+}
+
+#gellery_header div{
+    text-align: center;
+    font-size: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(69, 50, 2);
+}
+
+#gallery-box{
+    position: relative;
+    display: flex;
+    border: dashed 10px cornsilk;
+    border-radius: 50px;
+    justify-content: space-evenly;
+    margin: 2%;
+    background-color:
+}
 .gallery_form{
     
-    display: inline;
     float: left;
-    background-color: lightskyblue;
-    margin: 0.1%;
-    height: 70vh;
-    width: 33%;
+    background-color: crimson;
+    margin: 2%;
+    height: 60vh;
+    flex-basis: 33%;
+}
+
+.memory_images{
+    height: 70%;
+    background-color: darkblue;
 }
 
 /* 정은 */
