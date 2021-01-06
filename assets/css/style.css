@@ -33,6 +33,11 @@ a:visited {
     font-size: 20px;
 }
 
+.space{
+    height: 70px;
+    width: fit-content;
+}
+
 #intro_content {
     position: relative;
     top:35vh;
@@ -86,18 +91,39 @@ a:visited {
 #main_images{
     position: relative;
     /* background-color: cornsilk; */
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-content:space-between;
+    flex-wrap:nowrap;
     top: 10vh;
 }
 #main_images img{
-    width: 14vw;
+    width: 15vw;
     display: inline;
 }
+
+/* 캐릭터 튀어나오게 */
+#main_images img{
+    transition: all 0.3s ease-in-out;
+}
+#main_images ul{
+    display: flex;
+}
+
+#main_images li,#main_images li ul li {
+    list-style: none;
+    display: inline;
+    flex: none;
+}
+#main_images img:hover{
+    transform: scale(1.4);
+}
+
 
 #gallery_button{
     position: relative;
     text-align: center;
-    top: 20vh; 
+    top: 10vh; 
     left: 45vw;
     margin: 10px;
     background-color: rgb(255, 231, 133);
@@ -114,22 +140,11 @@ a:visited {
     border-radius: 20px;
 }
 
-/* 캐릭터 튀어나오게 */
-#main_images img{
-    transition: all 0.3s ease-in-out;
-}
-#main_images li{
-    list-style: none;
-    display: inline;
-}
-#main_images img:hover{
-    transform: scale(1.4);
-}
 
 .back_button{
     display: inline-block;
     position: relative;
-    left: 2%;
+    left: 3%;
     bottom: 50px;
     font-size: 1.5rem;
     border: none;
@@ -140,10 +155,14 @@ a:visited {
     background-color: rgb(51, 177, 255);
 }
 
-header{
-    display: block;
+.button_indi{
+    position: relative;
+    left: 3%;
+    top: 5vh;
+    font-size: 1.5rem;
+    border: none;
+    background-color: lightcyan;
 }
-
 /* gallery */
 
 .gallery_form{
@@ -156,4 +175,20 @@ header{
     width: 33%;
 }
 
-/*  */
+/* 정은 */
+#introduce_jeongeun{
+    position: relative;
+    text-align: center;
+    top: 1vh;
+    left: 25%;
+    width:700px;
+    font-size: 4rem;
+    display: inline-block;
+    border: dashed  rgb(255, 231, 133) 8px;
+    border-radius: 50px;
+    /* background-color: cornflowerblue; */
+}
+
+#jeongeun_page{
+    background-color: floralwhite;
+}
