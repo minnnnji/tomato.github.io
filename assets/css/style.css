@@ -82,12 +82,25 @@ a:visited {
 }
 
 /* tomato html */
+#main_header{
+    position: relative;
+    top: 2vh;
+    height: 15vh;
+}
 #main_page {
     background-color: cornsilk;
 }
-
+#main_header div {
+    text-align: center;
+}
+#main_header div span{
+    font-size: 4rem;
+    display: inline-block;
+    width: 700px;
+    border: dashed rgb(255, 231, 133) 8px;
+    border-radius: 50px;
+}
 #who_we_are {
-    position: relative;
     text-align: center;
     top: 1vh;
     left: 25%;
@@ -153,13 +166,12 @@ a:visited {
 .back_button {
     display: inline-block;
     position: relative;
-    left: 3%;
-    bottom: 50px;
+
     font-size: 1.5rem;
     border: none;
     background-color: lightcyan;
 }
-.back_button:hover {
+.button_indi:hover {
     color: lightcyan;
     background-color: rgb(51, 177, 255);
 }
