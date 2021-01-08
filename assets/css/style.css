@@ -5,9 +5,15 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* basic */
-html body{
+html body {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -15,6 +21,9 @@ html body{
     font-family: "KyoboHand";
 }
 
+li {
+    list-style: none;
+}
 a {
     color: black;
     text-decoration: none;
@@ -34,14 +43,14 @@ a:visited {
     font-size: 20px;
 }
 
-.space{
+.space {
     height: 70px;
     width: fit-content;
 }
 
 #intro_content {
     position: relative;
-    top:35vh;
+    top: 35vh;
     text-align: center;
     /* background-color: rgba(250, 128, 114); */
 }
@@ -54,11 +63,11 @@ a:visited {
     width: 180px;
     top: 80px;
 }
-.image_left{
-    margin-right: 20px;       
+.image_left {
+    margin-right: 20px;
 }
-.image_right{
-    margin-left: 20px;       
+.image_right {
+    margin-left: 20px;
 }
 
 /* intro page text */
@@ -73,76 +82,75 @@ a:visited {
 }
 
 /* tomato html */
-#main_page{
+#main_page {
     background-color: cornsilk;
 }
 
-#who_we_are{
+#who_we_are {
     position: relative;
     text-align: center;
     top: 1vh;
     left: 25%;
-    width:700px;
+    width: 700px;
     font-size: 4rem;
     display: inline-block;
-    border: dashed  rgb(255, 231, 133) 8px;
+    border: dashed rgb(255, 231, 133) 8px;
     border-radius: 50px;
     /* background-color: cornflowerblue; */
 }
-#main_images{
+#main_images {
     position: relative;
     /* background-color: cornsilk; */
     display: flex;
     justify-content: center;
-    align-content:space-between;
-    flex-wrap:nowrap;
+    align-content: space-between;
+    flex-wrap: nowrap;
     top: 10vh;
 }
-#main_images img{
+#main_images img {
     width: 15vw;
     display: inline;
 }
 
 /* 캐릭터 튀어나오게 */
-#main_images img{
+#main_images img {
     transition: all 0.3s ease-in-out;
 }
-#main_images ul{
+#main_images ul {
     display: flex;
 }
 
-#main_images li,#main_images li ul li {
+#main_images li,
+#main_images li ul li {
     list-style: none;
     display: inline;
     flex: none;
 }
-#main_images img:hover{
+#main_images img:hover {
     transform: scale(1.4);
 }
 
-
-#gallery_button{
+#gallery_button {
     position: relative;
     text-align: center;
-    top: 10vh; 
+    top: 10vh;
     left: 45vw;
     margin: 10px;
     background-color: rgb(255, 231, 133);
-    position:fixed 50vw;
+    position: fixed 50vw;
 }
-#gallery_button:hover{
+#gallery_button:hover {
     background-color: rgb(108, 77, 0);
     color: #fff;
 }
-.button{
-    border:dashed;
+.button {
+    border: dashed;
     font-family: "KyoboHand";
     font-size: 2rem;
     border-radius: 20px;
 }
 
-
-.back_button{
+.back_button {
     display: inline-block;
     position: relative;
     left: 3%;
@@ -151,12 +159,12 @@ a:visited {
     border: none;
     background-color: lightcyan;
 }
-.back_button:hover{
+.back_button:hover {
     color: lightcyan;
     background-color: rgb(51, 177, 255);
 }
 
-.button_indi{
+.button_indi {
     position: relative;
     left: 3%;
     top: 5vh;
@@ -166,96 +174,116 @@ a:visited {
 }
 /* gallery */
 
-#gallery_page{
+#gallery_page {
+    font-family: 'InkLipquid';
     width: 100vw;
-    background-color:rgb(255, 231, 133);
+    background-color: rgb(255, 231, 133);
 }
-#gellery_header{
+#gellery_header {
     position: relative;
-    top: 2vh;
+    /* top: 2vh; */
     height: 15vh;
     background-color: rgb(255, 231, 133);
 }
 
-#gellery_header div{
+#gellery_header div {
     text-align: center;
     font-size: 4rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(69, 50, 2);
 }
 
-#gallery-box{
+#gallery-box {
     position: relative;
     display: flex;
     border: dashed 10px cornsilk;
     border-radius: 50px;
     justify-content: space-evenly;
-    margin: 2%;
+    margin: 0 2%;
     /* background-color: darkgray */
 }
-.gallery_form{
-    
+.gallery_form {
     float: left;
     background-color: rgb(250, 242, 206);
     border: darkgray solid 4px;
     border-radius: 30px;
     margin: 2%;
-    height: 63vh;
+    height: 73vh;
+    width: 30%;
     flex-basis: 33%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-
-.memory_images{
-    height:70%;
+.memory_box{
     width: 100%;
-    /* background-color: darkblue; */
-    overflow:scroll;
-}
-.memory_images img{
-    width: 100%;
-}
-.memory_header{
+    overflow: scroll;
     
 }
-.travel_title{
+
+.memory_images, .memory_images2 {
+    /* height: 70%; */
+    width: 80%;
+    margin: 0px auto;
+    /* background-color: darkblue; */
+    overflow:visible;
+}
+.memory_images img {
+    width: 60%;
+    display: inline-block;
+}
+.memory_header {
+}
+.travel_title {
     /* width: 50%; */
-    font-size: 2rem;
+    font-size: 2.5rem;
     height: 40px;
     border-radius: 40px;
     color: rgb(69, 50, 2);
     /* background-color: rgb(250, 242, 206); */
 }
 
-.memory_footer{
-    position: relative;
-    padding:0px 15px;
-    border-radius: 50px;
-    background-color:rgb(250, 242, 206);
-    bottom: 1vh;
+.memory_footer {
+    position:absolute;
+    padding: 0px 15px;
+    font-size: 2rem;
+    bottom: 5vh;
 }
-#to-be-continue{
+#to-be-continue {
     position: relative;
     font-size: 2rem;
     top: 40%;
 }
 /* 정은 */
-#introduce_jeongeun{
+#introduce_jeongeun {
     position: relative;
     text-align: center;
     top: 1vh;
     left: 25%;
-    width:700px;
+    width: 700px;
     font-size: 4rem;
     display: inline-block;
-    border: dashed  rgb(255, 231, 133) 8px;
+    border: dashed rgb(255, 231, 133) 8px;
     border-radius: 50px;
     /* background-color: cornflowerblue; */
 }
 
-#jeongeun_page{
+#jeongeun_page {
     background-color: floralwhite;
+}
+
+.post-slider {
+    border: 1px solid red;
+}
+.post-slider .post-wrapper {
+    width: 84%;
+    height: 350px;
+    margin: 0px auto;
+    border: 1px dashed red;
+}
+.post-slider .post-wrapper .post {
+    width: 300px;
+    height: 350px;
+    display: inline-block;
+    background: gray;
 }
