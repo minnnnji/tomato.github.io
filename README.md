@@ -13,4 +13,10 @@
     이전 페이지로 넘어갈 수 있는 back button 생성
     갤러리로 넘어 갈 수 있는 button 생성
     
-
+ 
+- 2020 01 08
+    
+    Gallery 레이아웃 설정 <br>
+    Images 폴더로 해놔서 gitgub.io에서 이미지가 깨지는 것을 Img 폴더로 바꾸어 해결<br>
+    Gallery slick() 추가로 사진 여행별로 사진 볼 수 있도록 설정<br>
+    
