@@ -15,9 +15,7 @@ button{
     border: none;
     background: none;
 }
-button:hover{
-    
-}
+
 /* basic */
 html body {
     height: 100%;
@@ -188,6 +186,7 @@ a:visited {
     border: none;
     background-color: lightcyan;
 }
+
 /* gallery */
 
 #gallery_page {
@@ -270,36 +269,4 @@ a:visited {
     font-size: 2rem;
     top: 40%;
 }
-/* 정은 */
-#introduce_jeongeun {
-    position: relative;
-    text-align: center;
-    top: 1vh;
-    left: 25%;
-    width: 700px;
-    font-size: 4rem;
-    display: inline-block;
-    border: dashed rgb(255, 231, 133) 8px;
-    border-radius: 50px;
-    /* background-color: cornflowerblue; */
-}
 
-#jeongeun_page {
-    background-color: floralwhite;
-}
-
-.post-slider {
-    border: 1px solid red;
-}
-.post-slider .post-wrapper {
-    width: 84%;
-    height: 350px;
-    margin: 0px auto;
-    border: 1px dashed red;
-}
-.post-slider .post-wrapper .post {
-    width: 300px;
-    height: 350px;
-    display: inline-block;
-    background: gray;
-}

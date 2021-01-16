@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: cornsilk;
+}
+.container {
+    margin-left: 0;
+    padding-left: 0;
+}
+.max-height{
+    height: 100vh;
+    width: 100vw;
+}
+/* nav - esther start */
+header{
+    height: 12%;
+}
+nav{
+    position: relative;
+    top: 5vh;
+    left: 3%;
+    width: 94%;
+    display: inline-flex;
+    justify-content: space-between;
+    /* background-color: darksalmon; */
+}
+nav .button_indi{
+    position: static;
+}
+
+#esther{
+    font-family: 'InkLipquid';
+    font-size: 2rem;
+}
+/* nav - esther end */
+.main{
+    height: 84%;
+    width: 100%;
+    position: relative;;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.main .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: lightblue;
+}
+.main .container .sub-container {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    border: 2px lightcoral solid;
+    border-radius: 10px;
+}
+.main .container img{
+    height: 100%;
+    width: 100%;
+}
