@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: '777Balsamtint';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Balsamtint.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     background-color: cornsilk;
 }
@@ -33,8 +39,8 @@ nav .button_indi{
 }
 
 #esther{
-    font-family: 'InkLipquid';
-    font-size: 2rem;
+    font-family: '777Balsamtint';
+    font-size: 2.7rem;
 }
 /* nav - esther end */
 .main{
@@ -52,7 +58,7 @@ nav .button_indi{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 .main .container .sub-container {
     height: 100%;
@@ -61,6 +67,45 @@ nav .button_indi{
     padding: 10px;
     border: 2px lightcoral solid;
     border-radius: 10px;
+    text-align: center;
+    font-family: '777Balsamtint' ; 
+}
+.relative-mode{
+    position: relative;
+}
+.jeongeun, .panda{
+    top: 10vh ;
+    right: 10vw ;
+}
+.rimmy{
+    bottom: 10vh;
+    right: 7vw;
+}
+.hojung{
+    left: 7vw;
+}
+.minji{
+    left: 7vw;
+    top: 10vh;
+}
+.esther{
+    right: 7vw;
+}
+.main .container .none{
+    border: none;
+}
+.third{
+    font-size: 1.7rem;
+}
+#content1{
+    padding: 4% 10%;
+    width:max-content;
+    margin-top: 2%;
+    font-size: 1.4rem;
+    background-color:rgb(255, 225, 181);
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align:justify
 }
 .main .container img{
     height: 100%;
